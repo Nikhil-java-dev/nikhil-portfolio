@@ -1,0 +1,447 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+  transition: 0.3s ease;
+}
+
+body.dark {
+  background: #020617;
+  color: #e2e8f0;
+}
+
+/* =========================
+   GLASS EFFECT
+========================= */
+.glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: #a78bfa;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid #7c3aed;
+}
+
+/* =========================
+   THEME BUTTON
+========================= */
+.theme-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 92vh;
+  background: linear-gradient(135deg, #263ba3, #3f497e);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 800;
+}
+
+.typing {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  padding: 12px 26px;
+  background: white;
+  color: #0f172a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn.small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+/* MAGNETIC EFFECT */
+.magnetic {
+  transition: transform 0.15s ease;
+}
+
+/* =========================
+   SECTION
+========================= */
+.section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills-grid {
+  margin-top: 30px;
+}
+
+.skill-badge {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  color: #0f172a;;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.project-grid {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  width: 300px;
+  padding: 26px;
+  border-radius: 16px;
+  background: rgba(9, 19, 134, 0.06);
+  backdrop-filter: blur(10px);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* DARK MODE CARD */
+body.dark .card {
+  background: rgba(30, 41, 59, 0.6);
+}
+
+body.dark .navbar {
+  background: rgba(2, 6, 23, 0.85);
+}
+
+/* =========================
+   GITHUB
+========================= */
+.github-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.github-box img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 420px;
+  margin: 30px auto 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+.success {
+  margin-top: 12px;
+  color: #22c55e;
+  font-weight: 500;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  padding: 24px;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+  margin-top: 40px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .navbar ul {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .project-grid {
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* =========================
+   PROJECT BUTTONS
+========================= */
+.project-buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dark-outline {
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+.dark-outline:hover {
+  background: #6366f1;
+  color: white;
+}
+
+/* =========================
+   NAV RIGHT
+========================= */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* =========================
+   HAMBURGER BUTTON
+========================= */
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE NAV
+========================= */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.98);
+    width: 220px;
+    padding: 24px;
+    border-radius: 12px;
+    gap: 18px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.open {
+    right: 20px;
+  }
+
+  .nav-links a {
+    color: white;
+  }
+}
+
+/* =========================
+   SMOOTH SCROLL POLISH
+========================= */
+.section {
+  scroll-margin-top: 90px;
+}
+
+/* subtle card entrance feel */
+.card {
+  will-change: transform, opacity;
+}
+
+/* =========================
+   CURSOR GLOW EFFECT
+========================= */
+.cursor-glow {
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(124, 58, 237, 0.25) 0%,
+    rgba(124, 58, 237, 0.12) 40%,
+    rgba(124, 58, 237, 0.05) 60%,
+    transparent 70%
+  );
+  filter: blur(20px);
+  z-index: 0;
+}
+
+/* stronger in dark mode */
+body.dark .cursor-glow {
+  background: radial-gradient(
+    circle,
+    rgba(167, 139, 250, 0.28) 0%,
+    rgba(167, 139, 250, 0.14) 40%,
+    rgba(167, 139, 250, 0.06) 60%,
+    transparent 70%
+  );
+}
