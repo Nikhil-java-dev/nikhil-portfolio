@@ -26,7 +26,8 @@ const Contact = () => {
         <input name="user_name" placeholder="Your Name" required />
         <input name="user_email" type="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required />
-        <button className="btn">Send Message</button>
+       <button className="btn contact-submit">Send Message</button>
+
       </form>
 
       {msg && <p className="success">{msg}</p>}

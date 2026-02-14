@@ -8,6 +8,8 @@
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +25,16 @@ body.dark {
   color: #e2e8f0;
 }
 
+
+html, body {
+  overflow-x: hidden;
+}
+
+.section {
+  scroll-margin-top: 90px;
+}
+
+
 /* =========================
    GLASS EFFECT
 ========================= */
@@ -35,18 +47,36 @@ body.dark {
 /* =========================
    NAVBAR
 ========================= */
+/* =========================
+   NAVBAR — FIXED & MODERN
+========================= */
 .navbar {
+  position: sticky;
+  top: 0; /* ✅ remove top gap */
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 60px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(12px);
-  background: rgba(15, 23, 42, 0.75);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  padding: 14px 40px;
+
+  /* ✅ remove side floating look */
+  margin: 0;
+  border-radius: 0;
+  border: none;
+
+  backdrop-filter: blur(16px);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.92),
+    rgba(30, 41, 59, 0.92)
+  );
+
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
 }
+
+
 
 .navbar h2 {
   font-weight: 700;
@@ -61,20 +91,34 @@ body.dark {
 }
 
 .navbar a {
-  color: white;
+  color: #c7d2fe; /* ✅ soothing */
   text-decoration: none;
   font-weight: 500;
-  transition: 0.25s ease;
+  transition: all 0.25s ease;
   position: relative;
 }
 
+/* hover */
 .navbar a:hover {
   color: #a78bfa;
 }
 
-.navbar a.active {
-  border-bottom: 2px solid #7c3aed;
+/* modern underline */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #a78bfa);
+  transition: width 0.25s ease;
 }
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
 
 /* =========================
    THEME BUTTON
@@ -214,17 +258,30 @@ body.dark {
 .card {
   width: 300px;
   padding: 26px;
-  border-radius: 16px;
-  background: rgba(9, 19, 134, 0.06);
-  backdrop-filter: blur(10px);
-  transition: all 0.25s ease;
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(12px);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transform: translateY(-10px) scale(1.025);
+  box-shadow:
+    0 25px 60px rgba(124, 58, 237, 0.25),
+    0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
 
 /* DARK MODE CARD */
 body.dark .card {
@@ -327,11 +384,13 @@ body.dark .navbar {
    PROJECT BUTTONS
 ========================= */
 .project-buttons {
-  margin-top: 18px;
+  margin-top: auto; /* ✅ pushes buttons down */
+  padding-top: 16px;
   display: flex;
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .dark-outline {
@@ -368,6 +427,12 @@ body.dark .navbar {
 /* =========================
    MOBILE NAV
 ========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 18px;
+  }
+}
+
 .nav-links {
   display: flex;
   gap: 28px;
@@ -419,20 +484,21 @@ body.dark .navbar {
 ========================= */
 .cursor-glow {
   position: fixed;
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
   background: radial-gradient(
     circle,
-    rgba(124, 58, 237, 0.25) 0%,
+    rgba(124, 58, 237, 0.22) 0%,
     rgba(124, 58, 237, 0.12) 40%,
-    rgba(124, 58, 237, 0.05) 60%,
-    transparent 70%
+    rgba(124, 58, 237, 0.04) 65%,
+    transparent 75%
   );
-  filter: blur(20px);
+  filter: blur(24px);
   z-index: 0;
+  transition: transform 0.08s linear;
 }
 
 /* stronger in dark mode */
@@ -445,3 +511,108 @@ body.dark .cursor-glow {
     transparent 70%
   );
 }
+
+/* =========================
+   GITHUB FAANG SECTION
+========================= */
+.github-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.github-box img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.github-box img:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.section h2 {
+  font-size: 34px;
+  margin-bottom: 14px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #6366f1, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================
+   UNICORN SPOTLIGHT EFFECT
+========================= */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: radial-gradient(
+    400px circle at var(--x, 50%) var(--y, 50%),
+    rgba(124, 58, 237, 0.25),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 0;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+.spotlight-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* =========================
+   CONTACT SUBMIT BUTTON
+========================= */
+/* =========================
+   CONTACT SUBMIT BUTTON
+========================= */
+.contact-submit {
+  width: 100%;
+  margin-top: 10px;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff !important;
+
+  border: none;
+  border-radius: 12px;
+
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  transition: all 0.25s ease;
+}
+
+/* hover effect */
+.contact-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(99, 102, 241, 0.35);
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+/* click effect */
+.contact-submit:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.25);
+}
+
+

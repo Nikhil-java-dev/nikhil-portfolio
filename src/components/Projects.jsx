@@ -1,19 +1,19 @@
-import SectionWrapper from "./SectionWrapper";
 import { motion } from "framer-motion";
+import SectionWrapper from "./SectionWrapper";
 
 const Projects = () => {
   const projects = [
     {
       title: "Full-Stack E-Commerce Platform",
       desc: "Spring Boot + React scalable e-commerce system.",
-      github: "https://github.com/Nikhil-java-dev",
-      live: "#", // 🔥 replace with your live link later
+      live: "#",
+      github: "#",
     },
     {
       title: "CRUD Web Applications",
       desc: "Servlet & JDBC MVC applications deployed on Tomcat.",
-      github: "https://github.com/Nikhil-java-dev",
-      live: "#", // 🔥 replace with your live link later
+      live: "#",
+      github: "#",
     },
   ];
 
@@ -22,7 +22,6 @@ const Projects = () => {
       <section id="projects" className="section">
         <h2>Technical Projects</h2>
 
-        {/* 🔥 Animated Grid */}
         <motion.div
           className="project-grid"
           initial="hidden"
@@ -31,16 +30,14 @@ const Projects = () => {
           variants={{
             hidden: {},
             visible: {
-              transition: {
-                staggerChildren: 0.15,
-              },
+              transition: { staggerChildren: 0.15 },
             },
           }}
         >
           {projects.map((p, i) => (
             <motion.div
               key={i}
-              className="card glass"
+              className="card glass spotlight-card"
               variants={{
                 hidden: { opacity: 0, y: 40 },
                 visible: { opacity: 1, y: 0 },
