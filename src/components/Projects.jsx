@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "CRUD Web Applications",
       desc: "Servlet & JDBC MVC applications deployed on Tomcat.",
-      live: "http://localhost:8185/jdbc-and-servlet-crud-project/",
+      live: "#",
       github: "https://github.com/Nikhil-java-dev/jdbc-servlet-crud-project",
     },
   ];
