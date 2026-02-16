@@ -46,9 +46,16 @@ const Navbar = () => {
             Projects
           </a>
         </li>
+        
         <li>
           <a className={active === "contact" ? "active" : ""} href="#contact" onClick={closeMenu}>
             Contact
+          </a>
+        </li>
+
+        <li>
+          <a className={active === "contact" ? "active" : ""} href="https://linkedin.com/in/nikhil-srivastava-7a2266298" onClick={closeMenu}>
+            LinkedIn
           </a>
         </li>
       </ul>
