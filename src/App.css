@@ -247,8 +247,8 @@ html, body {
 /* Category Heading */
 .skill-category h3 {
   margin-bottom: 12px;
-  font-size: 25px;
-  font-weight: 650;
+  font-size: 26px;
+  font-weight: 670;
   color: #ed5681;
 }
 
@@ -262,10 +262,10 @@ html, body {
 /* Badge */
 .skill-badge {
   padding: 8px 16px;
-  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  background: linear-gradient(135deg, #9770be, #e0e7ff);
   color: #0f172a;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   transition: 0.3s ease;
 }
@@ -291,8 +291,8 @@ html, body {
   border-radius: 18px;
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.08),
-    rgba(255, 255, 255, 0.02)
+    rgba(183, 27, 172, 0.08),
+    rgba(199, 27, 27, 0.02)
   );
   backdrop-filter: blur(12px);
   transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
@@ -424,13 +424,13 @@ body.dark .navbar {
 }
 
 .dark-outline {
-  border-color: #6366f1;
-  color: #6366f1;
+  border-color: #1215d1;
+  color: #927d8a4b;
 }
 
 .dark-outline:hover {
   background: #6366f1;
-  color: white;
+  color: #f5f1f1;
 }
 
 /* =========================
