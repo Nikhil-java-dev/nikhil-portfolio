@@ -27,7 +27,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar glass">
-      <h2>Nikhil Srivastava</h2>
+      <h1 className="logo">
+  <span className="first">Nikhil</span>{" "}
+  <span className="last">Srivastava</span>
+</h1>
+
+
+
 
       {/* Desktop Menu */}
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
