@@ -11,7 +11,7 @@ const Projects = () => {
     },
     {
       title: "CRUD Web Applications",
-      desc: "Servlet & JDBC MVC applications deployed on Tomcat.",
+      desc: "JDBC, Servlet & JSP based CRUD applications deployed on Tomcat.",
       live: "#",
       github: "https://github.com/Nikhil-java-dev/jdbc-servlet-crud-project",
     },

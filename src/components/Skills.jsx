@@ -1,43 +1,64 @@
 import SectionWrapper from "./SectionWrapper";
 
 const Skills = () => {
-  const skills = [
-    "Java ",
-    "OOPs ",
-    "DSA " ,
-    "Servlet ",
-    "JSP ",
-    "Spring ",
-    "Spring Boot ",
-    "Spring Security ",
-    "Hibernate/JPA ",
-    "React JS ",
-    "MySQL ",
-    "Oracle ",
-    "JS ",
-    "HTML ", 
-    "Bootstrap ",
-    "CSS ", 
-    "REST APIs ",
-    "maven ", 
-    "Postman ", 
-    "Apache Tomcat ",
-    "Eclipse ",
-    "STS ",
-    "VS Code ", 
-    "Git & GitHub ",
-  ];
+  const skills = {
+    "Backend": [
+      "Java",
+      "JDBC",
+      "Servlet",
+      "JSP",
+      "Spring",
+      "Spring Boot",
+      "Spring Security",
+      "Hibernate/JPA",
+      "REST APIs"
+
+    ],
+    "Frontend": [
+      "React JS",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "JavaScript"
+    ],
+    "Database": [
+      "MySQL",
+      "Oracle"
+    ],
+    "Core Concepts": [
+      "Core Java",
+      "OOPs",
+      "DSA"
+    ],
+    "Tools": [
+      "Maven",
+      "Postman",
+      "Apache Tomcat",
+      "Eclipse",
+      "STS",
+      "VS Code",
+      "Git & GitHub"
+    ]
+  };
 
   return (
     <SectionWrapper>
       <section id="skills" className="section">
         <h2>Technical Skills & Tools</h2>
 
-        <div className="skills-grid">
-          {skills.map((s, i) => (
-            <span key={i} className="skill-badge">{s}</span>
-          ))}
-        </div>
+        {Object.entries(skills).map(([category, items]) => (
+  <div key={category} className="skill-category">
+    <h3>{category}</h3>
+
+    <div className="skills-grid">
+      {items.map((skill, index) => (
+        <span key={index} className="skill-badge">
+          {skill}
+        </span>
+      ))}
+    </div>
+  </div>
+))}
       </section>
     </SectionWrapper>
   );
