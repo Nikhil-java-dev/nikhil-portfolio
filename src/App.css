@@ -119,6 +119,9 @@ html, body {
   width: 100%;
 }
 
+.about-text{
+  font-family: cursive;
+}
 
 /* =========================
    THEME BUTTON
