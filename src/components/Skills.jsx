@@ -2,7 +2,7 @@ import SectionWrapper from "./SectionWrapper";
 
 const Skills = () => {
   const skills = {
-    "Backend": [
+    "⚙️Backend": [
       "Java",
       "JDBC",
       "Servlet",
@@ -14,23 +14,23 @@ const Skills = () => {
       "REST APIs"
 
     ],
-    "Frontend": [
+    "🎨Frontend": [
       "React JS",
       "HTML",
       "CSS",
       "Bootstrap",
       "JavaScript"
     ],
-    "Database": [
+    "🗄️Database": [
       "MySQL",
       "Oracle"
     ],
-    "Core Concepts": [
+    "🧩Core Concepts": [
       "Core Java",
       "OOPs",
       "DSA"
     ],
-    "Tools": [
+    "🧰Tools": [
       "Maven",
       "Postman",
       "Apache Tomcat",
