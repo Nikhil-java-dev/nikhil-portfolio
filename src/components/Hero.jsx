@@ -35,7 +35,11 @@ const Hero = () => {
       </h3>
 
       <div className="hero-buttons">
+        <a href="https://github.com/Nikhil-java-dev" 
+        target="_blank" 
+        rel="noopener noreferrer">
         <MagneticButton>View Work</MagneticButton>
+    </a>
 
         <a href="/resume.pdf" className="btn outline" download>
           Download Resume
