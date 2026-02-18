@@ -41,7 +41,7 @@ const Hero = () => {
           <MagneticButton>View Work</MagneticButton>
         </a>
 
-        <a href="/resume.pdf" className="btn outline" download>
+        <a href="/Nikhil_Srivastava_Resume.pdf" className="btn outline" download>
           Download Resume
         </a>
       </div>
