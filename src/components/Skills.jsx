@@ -2,25 +2,42 @@ import SectionWrapper from "./SectionWrapper";
 
 const Skills = () => {
   const skills = {
-    "⚙️Backend": [
+    "👨‍💻Backend Languages": [
       "Java",
-      "JDBC",
-      "Servlet",
-      "JSP",
-      "Spring",
-      "Spring Boot",
-      "Spring Security",
-      "Hibernate/JPA",
-      "REST APIs"
-
+      "SQL",
+      "C",
+      "PYTHON",
+      "PHP"
     ],
     "🎨Frontend": [
-      "React JS",
       "HTML",
       "CSS",
-      "Bootstrap",
       "JavaScript"
     ],
+    "🏗️Frameworks & Libraries": [
+      "Spring Boot,",
+      "Spring MVC",
+      "Spring Security",
+      "Hibernate/JPA",
+      "React JS,",
+      "JDBC",
+      "JSP",
+      "Servlets",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "🗺️API & Architecture": [
+      "RESTful APIs,",
+      "CRUD Operations",
+      "JSON",
+      "HTTP Methods",
+      "Exception Handling,",
+      "MVC Architecture",
+      "Layered Architecture",
+      "Dependency Injection",
+      "RESTful Architecture"
+    ],
+    
     "🗄️Database": [
       "MySQL",
       "Oracle"
@@ -28,16 +45,20 @@ const Skills = () => {
     "🧩Core Concepts": [
       "Core Java",
       "OOPs",
-      "DSA"
+      "DSA",
+      "C"
     ],
-    "🧰Tools": [
+    "🔧Tools & Platforms": [
       "Maven",
       "Postman",
       "Apache Tomcat",
       "Eclipse",
       "STS",
       "VS Code",
-      "Git & GitHub"
+      "Git",
+      "GitHub",
+      "Swagger UI",
+      "SLF4J/Logback"
     ]
   };
 
