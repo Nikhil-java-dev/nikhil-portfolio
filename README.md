@@ -1,16 +1,101 @@
-# React + Vite
+# Nikhil Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio website built to showcase my projects, skills, and journey as a Java Full-Stack Developer.
 
-Currently, two official plugins are available:
+I created this portfolio to share the work I’ve been learning and building during my development journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 https://your-vercel-link.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Built With
+
+- React JS
+- JavaScript
+- HTML
+- CSS
+- Tailwind CSS
+
+---
+
+## ✨ Features
+
+- Responsive design
+- Smooth UI
+- Projects section
+- Skills section
+- Contact section
+- Clean and simple layout
+
+---
+
+## 📂 Projects Included
+
+Some projects showcased in this portfolio:
+
+- E-Commerce Web Application
+- CRUD Web Application
+- REST API Based Projects
+- Frontend UI Projects
+
+---
+
+## 📸 About Me
+
+Hi, I'm Nikhil 👋
+
+I’m a Java Full-Stack Developer passionate about backend development and REST API development using Spring Boot.
+
+Currently improving my skills in:
+- Spring Boot
+- Hibernate/JPA
+- React JS
+- REST APIs
+- MySQL
+- Data Structures & Algorithms
+
+I enjoy learning by building projects and solving coding problems.
+
+---
+
+## 🚀 Run Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/Nikhil-java-dev/nikhil-portfolio.git
+```
+
+Go to the project directory
+
+```bash
+cd nikhil-portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📫 Contact
+
+- Email: srivastavanikhil756@gmail.com
+- GitHub: https://github.com/Nikhil-java-dev
+- LinkedIn: Add your LinkedIn link
+
+---
+
+Thanks for visiting my portfolio 😊
