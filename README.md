@@ -8,7 +8,7 @@ I created this portfolio to share the work I’ve been learning and building dur
 
 ## 🌐 Live Demo
 
-👉 https://your-vercel-link.vercel.app
+👉 https://nikhil-portfolio-dusky.vercel.app/
 
 ---
 
