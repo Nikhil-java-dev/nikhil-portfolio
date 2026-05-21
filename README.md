@@ -94,7 +94,7 @@ npm run dev
 
 - Email: srivastavanikhil756@gmail.com
 - GitHub: https://github.com/Nikhil-java-dev
-- LinkedIn: Add your LinkedIn link
+- LinkedIn: https://linkedin.com/in/nikhil-srivastava-7a2266298
 
 ---
 
